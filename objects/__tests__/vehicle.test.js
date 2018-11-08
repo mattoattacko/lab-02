@@ -1,5 +1,7 @@
 'use strict';
 
+// In the objects/__tests__ folder, you'll find a file called vehicle.test.js that tests the implementation of both a Car and a Motorcycle using the constructor pattern.
+
 const Vehicle = require('../vehicle-class.js');
 
 describe('Vehicles', () => {

@@ -1,50 +1,45 @@
 'use strict';
 
-const SeaCreature = require('../sea-creatures-class.js');
+// Repeat the process, from scratch, implementing a SeaCreature parent class, with Fish and Lobster child classes.
 
-describe('Sea Creature', () => {
+class SeaCreature {
+  
+  constructor(name, antennae) {
+    this.name = name;
+    this.antennae = antennae;
+  }
 
-  describe('Shark', () => {
+  dangerous () {
+    return 'sometimes';
+  }
 
-    let shark = new SeaCreature.Shark('Tiger Shark');
-    
-    it('They have teeth', () => {
-      expect(shark.teeth).toEqual(true);
-    });
-  
-    it('Live in this ocean', () => {
-      expect(shark.ocean).toEqual('Pacific');
-    });
-  
-    it('They eat everything, like goats', () => {
-      expect(shark.eat()).toBeTruthy();
-    });
-  
-    it('They are the scariest sharks', () => {
-      expect(shark.scary).toBeUndefined();
-    });
-  });
+  tasty () {
+    return 'almost always';
+  }
+}
 
-  describe('Jellyfish', () => {
-  
-    let jellyfish = new SeaCreature.JellyFish('Immortal Jellyfish');
-    // console.log(jellyfish);
+// Fish & Lobster
 
-    it('Is biologically imortal', () => {
-      expect(jellyfish.lifeSpan).toEqual(true);
-    });
-  
-    it('Class is Hydrozoa', () => {
-      expect(jellyfish.class).toEqual('Hydrozoa');
-    });
-  
-    it('Is bell-shaped', () => {
-      expect(jellyfish.shape()).toBeTruthy();
-    });
-  
-    it('They are tiny', () => {
-      expect(jellyfish.invertebrate()).toEqual('Only 4.5 milimeters in diameter');
-    });
-  });
+class Fish extends SeaCreature {
 
-});
+  constructor(name) {
+    super();
+    this.name = name;
+    this.antennae = 'No';
+  }
+}
+
+class Lobster extends SeaCreature {
+
+  constructor(name) {
+    super();
+    this.name = name;
+    this.antennae = 'Yes';
+  }
+
+  pinch () {
+    return 'PINCH ALL THE THINGS';
+  }
+}
+
+module.exports = { Fish, Lobster };

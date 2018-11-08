@@ -1,5 +1,7 @@
 'use strict';
 
+// Implement both Car and Motorcycle using a Javascript Class (in the vehicle-class.js file)
+
 class Vehicle {
   constructor(name, wheels) {
     this.name = name;

@@ -1,29 +1,28 @@
 'use strict';
 
-// Requirements: Implement both Car and Motorcycle using a Javascript Factory Function (in the vehicle-factory.js file)
+// Requirements: Implement both Fish and Lobster using a Javascript Factory Function 
 
-// Just use the one he showed in code demo video
-const Vehicle = () => ({
-  drive: () => {
-    return ('Moving Forward');
+const SeaCreature = () => ({
+  dangerous: () => {
+    return ('It depends');
   },
-  stop: () => {
-    return ('Stopping');
+  tasty: () => {
+    return ('Almost always tasty');
   },
 });
 
-function Car() {
-  let wheels = 4;
-  let car = Object.assign( {}, { name }, { wheels }, Vehicle());
-  return car;
+function Fish() {
+  let antennae = 'No';
+  let fish = Object.assign( {}, { name }, { antennae }, SeaCreature());
+  return fish;
 }
 
-function Motorcycle() {
-  let wheels = 2;
-  let motorcycle = Object.assign( {}, { name }, { wheels }, { wheelie }, Vehicle());
-  function wheelie() {
-    return ('Wheee!');}
-  return Object.freeze(motorcycle);
+function Lobster() {
+  let antennae = 'Yes';
+  let lobster = Object.assign( {}, { name }, { antennae }, { pinch }, SeaCreature());
+  function pinch() {
+    return ('Tamatoa will pinch you!');}
+  return Object.freeze(lobster);
 }
 
-module.exports = { Car, Motorcycle };
+module.exports = { Fish, Lobster };

@@ -1,41 +1,37 @@
 'use strict';
 
-const FlyingVehicle = function(name, flyAcrossPacific) {
+const SeaCreature = function(name, antennae) {
   this.name = name;
-  this.flyAcrossPacific = flyAcrossPacific;
+  this.antennae = antennae;
 };
 
-FlyingVehicle.prototype.takeoffSafely = () => {
-  return 'took off safely';
+SeaCreature.prototype.dangerous = () => {
+  return 'sometimes dangerous';
 };
 
-FlyingVehicle.prototype.flySafely = () => {
-  return 'flying safely';
+SeaCreature.prototype.tasty = () => {
+  return 'So Yummy!';
 };
 
-FlyingVehicle.prototype.landSafely = () => {
-  return 'landed safely';
-};
+// Fish Constructor
 
-// Airplane Constructor
-
-const Airplane = function(name) {
-  FlyingVehicle.call(this, name, 'true');
+const Fish = function(name) {
+  SeaCreature.call(this, name, 'False');
 };
-Airplane.prototype = new FlyingVehicle(); 
+Fish.prototype = new SeaCreature(); 
 
 // Use Johns demo constructors from car and motorcycle
 
-// Helioptor Constructor
+// Lobster Constructor
 
-const Helicoptor = function(name) {
-  FlyingVehicle.call(this, name, 'false');
+const Lobster = function(name) {
+  SeaCreature.call(this, name, 'True');
 };
 
-Helicoptor.prototype = new FlyingVehicle();
+Lobster.prototype = new SeaCreature();
 
-Helicoptor.prototype.crewCapacity = () => {
-  return '10';
+Lobster.prototype.pinch = () => {
+  return 'I PEEEENCH!';
 };
 
-module.exports = { Airplane, Helicoptor };
+module.exports = { Fish, Lobster };
