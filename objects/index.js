@@ -6,14 +6,14 @@ const Vehicle = require('./constructor.js');
 // const Vehicle = require('./factory.js');
 
 // Implement a car and motorcycle
-const mazda = new Vehicle.Car('Mazda 3');
-console.log(mazda.name, mazda.drive(), mazda.stop());
+const nissan = new Vehicle.Car('GTR');
+console.log(nissan.name, nissan.drive(), nissan.stop());
 
-const harley = new Vehicle.Motorcycle('Harley');
-console.log(harley.name, harley.wheelie(), harley.stop());
+const arch = new Vehicle.Motorcycle('Arch');
+console.log(arch.name, arch.wheelie(), arch.stop());
 
-const plane = new Vehicle.Airplane('Alaska Airlines');
+const plane = new Vehicle.Airplane('JAL');
 console.log(plane.name, plane.passengers, plane.privatelyOwned, plane.firstClass(), plane.takeoff());
 
-const chopper = new Vehicle.Helicopter('Apache');
-console.log(chopper.name, chopper.passengers, chopper.privatelyOwned, chopper.takeoff());
+const heli = new Vehicle.Helicopter('Black Hawk');
+console.log(heli.name, heli.passengers, heli.privatelyOwned, heli.takeoff());
