@@ -30,4 +30,4 @@ Motorcycle.prototype.wheelie = () => {
   return 'Wheee!';
 };
 
-module.exports = {Car, Motorcycle};
+module.exports = { Car, Motorcycle };
