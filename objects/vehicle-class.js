@@ -17,11 +17,9 @@ class Vehicle {
   //   };
 
   // Can't get vehicle.prototype to work at all. Testing other return method.
-
   drive() {
     return 'Moving Forward'; 
   }
-
   stop() {
     return 'Stopping';
   }
@@ -36,7 +34,6 @@ class Car extends Vehicle {
     this.wheels = 4;
   }
 }
-
 class Motorcycle extends Vehicle {
   constructor(name) {
     super();

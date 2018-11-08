@@ -21,7 +21,7 @@ const airplane = new FlyingVehicle.Airplane('JAL'); // JAL = Japan Airlines
 console.log(airplane.name, airplane.flyAcrossPacific, airplane.takeoffSafely, airplane.flySafely(), airplane.landSafely());
 
 const helicopter = new FlyingVehicle.Helicopter('Black Hawk');
-console.log(helicopter.name, helicopter.flyAcrossPacific, helicopter.takeoffSafely, helicopter.flySafely, helicopter.landSafely());
+console.log(helicopter.name, helicopter.flyAcrossPacific, helicopter.takeoffSafely, helicopter.flySafely, helicopter.landSafely(). helicopter.crewCapacity());
 
 const SeaCreature = require('./sea-creatures-constructor.js');
 // const FlyingVehicle = require('./sea-creatures-class.js');

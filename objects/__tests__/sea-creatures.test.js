@@ -4,47 +4,45 @@ const SeaCreature = require('../sea-creatures-class.js');
 
 describe('Sea Creature', () => {
 
-  describe('Shark', () => {
+  describe('hawaiiFish', () => {
 
-    let shark = new SeaCreature.Shark('Tiger Shark');
+    let fish = new SeaCreature.Fish('humuhumunukunukuapuaa');
     
-    it('They have teeth', () => {
-      expect(shark.teeth).toEqual(true);
+    it('has antennae', () => {
+      expect(fish.antennae).toEqual(false);
     });
   
-    it('Live in this ocean', () => {
-      expect(shark.ocean).toEqual('Pacific');
+    it('is dangerous', () => {
+      expect(fish.dangerous()).toEqual('Only if you are coral');
     });
   
-    it('They eat everything, like goats', () => {
-      expect(shark.eat()).toBeTruthy();
+    it('might be tasty', () => {
+      expect(fish.tasty()).toEqual('illegal to catch');
     });
   
-    it('They are the scariest sharks', () => {
-      expect(shark.scary).toBeUndefined();
+    it('has no pinchers', () => {
+      expect(fish.pinch).toBeUndefined();
     });
   });
 
-  describe('Jellyfish', () => {
+  describe('Lobster', () => {
   
-    let jellyfish = new SeaCreature.JellyFish('Immortal Jellyfish');
-    // console.log(jellyfish);
+    let lobster = new SeaCreature.Lobster('Tamatoa');
 
-    it('Is biologically imortal', () => {
-      expect(jellyfish.lifeSpan).toEqual(true);
+    it('has antennae', () => {
+      expect(lobster.antennae).toEqual(true);
     });
   
-    it('Class is Hydrozoa', () => {
-      expect(jellyfish.class).toEqual('Hydrozoa');
+    it('is dangerous', () => {
+      expect(lobster.dangerous).toEqual('Only if you are shiny!');
     });
   
-    it('Is bell-shaped', () => {
-      expect(jellyfish.shape()).toBeTruthy();
+    it('is tasty', () => {
+      expect(lobster.tasty()).toBeTruthy();
     });
   
-    it('They are tiny', () => {
-      expect(jellyfish.invertebrate()).toEqual('Only 4.5 milimeters in diameter');
+    it('pinches your fingers', () => {
+      expect(lobster.pinch()).toEqual(true);
     });
   });
-
 });

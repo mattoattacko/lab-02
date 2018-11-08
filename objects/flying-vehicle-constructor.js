@@ -20,7 +20,7 @@ FlyingVehicle.prototype.landSafely = () => {
 // Airplane Constructor
 
 const Airplane = function(name) {
-  FlyingVehicle.call(this, name, 'true');
+  FlyingVehicle.call(this, name, 'True');
 };
 Airplane.prototype = new FlyingVehicle(); 
 
@@ -29,7 +29,7 @@ Airplane.prototype = new FlyingVehicle();
 // Helioptor Constructor
 
 const Helicoptor = function(name) {
-  FlyingVehicle.call(this, name, 'false');
+  FlyingVehicle.call(this, name, 'False');
 };
 
 Helicoptor.prototype = new FlyingVehicle();
