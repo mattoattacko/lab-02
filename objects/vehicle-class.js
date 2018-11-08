@@ -25,7 +25,7 @@ class Vehicle {
   }
 }
 
-// Seems fine? Use extends like video and build off the same constructor John made
+// Seems fine? Use extends from demo?
 
 class Car extends Vehicle {
   constructor(name) {
