@@ -48,7 +48,7 @@ describe('FlyingVehicles', () => {
     });
 
     it('It can hold about 10 well equipped crewmen', () => { 
-      expect(helicopter.crewCapacity).toEqual(10);
+      expect(helicopter.crewCapacity()).toEqual('10');
     });
   });
 });
