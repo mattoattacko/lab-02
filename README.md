@@ -1,4 +1,4 @@
-https://www.travis-ci.com/mattoattacko/lab-02.svg?branch=master
+[![Build Status](https://www.travis-ci.com/mattoattacko/lab-02.svg?branch=master)](https://www.travis-ci.com/mattoattacko/lab-02)
 
 ![cf](https://i.imgur.com/7v5ASc8.png) 02: Tools and Context
 ============================================================
