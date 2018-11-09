@@ -9,15 +9,15 @@ describe('Sea Creature', () => {
     let fish = new SeaCreature.Fish('humuhumunukunukuapuaa');
     
     it('has antennae', () => {
-      expect(fish.antennae).toEqual(false);
+      expect(fish.antennae).toEqual('No');
     });
   
     it('is dangerous', () => {
-      expect(fish.dangerous()).toEqual('Only if you are coral');
+      expect(fish.dangerous()).toEqual('sometimes');
     });
   
     it('might be tasty', () => {
-      expect(fish.tasty()).toEqual('illegal to catch');
+      expect(fish.tasty()).toEqual('almost always');
     });
   
     it('has no pinchers', () => {
@@ -30,11 +30,11 @@ describe('Sea Creature', () => {
     let lobster = new SeaCreature.Lobster('Tamatoa');
 
     it('has antennae', () => {
-      expect(lobster.antennae).toEqual(true);
+      expect(lobster.antennae).toEqual('Yes');
     });
   
     it('is dangerous', () => {
-      expect(lobster.dangerous).toEqual('Only if you are shiny!');
+      expect(lobster.dangerous()).toEqual('sometimes');
     });
   
     it('is tasty', () => {
@@ -42,7 +42,7 @@ describe('Sea Creature', () => {
     });
   
     it('pinches your fingers', () => {
-      expect(lobster.pinch()).toEqual(true);
+      expect(lobster.pinch()).toEqual('PINCH ALL THE THINGS');
     });
   });
 });
