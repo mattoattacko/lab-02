@@ -57,5 +57,9 @@ In the `objects/__tests__` folder, you'll find a file called `vehicle.test.js` t
     * `reduce()`
 
 ##  Documentation
-Include your travis badge at the top of your `README.md` file
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
+* There are three seperate categories included in my objects folder, each with a class, constructor, and factory method JS file. I have one for the flying vehicle, one for sea creatures, and one for regular vehicles. 
+* flying vehicles (airplane and helicoptor) have an airty of 3, an expected parameter or data type of string, boolean, and number. They are considered valid if they output an object, and invalid if they output anything else (like NaN or Null).
+* Sea creatures have an airty of 3, an expected data type of string & boolean. They are considered valid if the output is an object, and invalid if output is anything else (like NaN or Null)
+* Vehicles (car and motorcycle) have an airty of 2 and an expected data type of string. Considered valid if they output an object and invalid if output is anyting else. 
+* I have it set up to run all of the tests on each part of the code independently and run off the class methods.
+* We can comment out the tests and have it run on the constructor.js or factory.js instead should we choose to test those. 
